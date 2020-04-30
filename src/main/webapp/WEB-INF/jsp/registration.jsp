@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html>
 <head>
     <title>Registration</title>
@@ -17,15 +18,17 @@
     <table>
         <tr>
             <td>
-                Name:
+                <spring:message code="name"/>:
             </td>
             <td>
                 <form:input path="name"/>
             </td>
         </tr>
         <tr>
-            <td>
-                <input type="submit" value="Add Registration">
+            <td colspan="2">
+                <input type="submit"
+                       value="<spring:message code="save.changes"/>"
+                >
             </td>
         </tr>
     </table>
