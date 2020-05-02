@@ -10,7 +10,7 @@ public class GreetingController {
 
     @GetMapping("greeting")
     public String greeting(Map<String, Object> model) {
-        model.put("message", "Hello From Abrar's Controller");
+        model.put("message", "Hello From Abrar's Greeting Controller");
         return "greeting";
     }
 }

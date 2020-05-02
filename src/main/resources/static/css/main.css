@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(0, 10, 2, 0.7) !important;
+}
+
+span[class^="glyphicon"] {
+    color: greenyellow;
+}
+
+.logo img {
+    max-width: 1.5em;
+}
+
+.mainHeader {
+    font-weight: bold;
+}
+
+h1, h2, h3, p, #footer, a {
+    text-align: left;
+    -webkit-text-fill-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-content .container {
+    width: 80%;
+    height: 80%;
+}
+
+.tab-content .container img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin: auto;
+    max-width: 1024px;
+    max-height: 576px;
+    margin: auto;
+    background-color: rgba(0, 10, 2, 0.7);
+}
+
+#footer {
+    padding-top: 10%;
+}
+
+.error {
+    color: red;
+}
+
+.errorblock {
+    color: #000;
+    background-color: lightcoral;
+    border: 3px solid red;
+    padding: 8px;
+    margin: 16px;
+}
+
+@media all and (min-width: 800px) {
+    .tab-content .container {
+        width: 70%;
+        height: 70%;
+    }
+}
